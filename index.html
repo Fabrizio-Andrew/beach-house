@@ -6,8 +6,15 @@
         <title>Beach House</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="stylesheet" href="Hero.css">
+        <style>
+          .is-ancestor {
+            border-top: 1px solid #dae1e9;
+            padding-top: 30px;
+          }
+        </style>
     </head>
     <body>
+      <!-- The Hero Image -->
       <section class="hero is-fullheight">
           <div style="position: absolute; top: 0; width: 100%; height: 100%; z-index: -1;">
               <video playsinline autoplay muted loop poster="beach-house-front.jpg" id="bgvideo" width="100%">
@@ -15,6 +22,7 @@
               </video>
           </div>
           <div class="hero-head">
+            <!-- The NavBar -->
               <nav class="navbar level is-fixed-top" style="background-color: white; box-shadow: 0 0 9px 0 #ababab;">
                 <div class="container">
                   <div class="navbar-brand">
@@ -51,14 +59,98 @@
               </div>
           </div>
       </section>
-      <section class="section is-medium">
+      <!-- The Card Section -->
+      <section class="section">
         <div class="tile is-ancestor">
-          <div class="tile is-5">
-            <img src="Media/beach-house-front.jpg">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="Media/beach-house-front.jpg" alt="placeholder">
+                  </figure>
+                </div>
+                <div class="content">
+                  Here is where I'm typing all kinds of craziness about how awesome my beach house is.
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tile">
-            <p class="title">Check it out</p>
-            <p class>I can show pictures and write stuff about them here.</p>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="Media/beach-house-front.jpg" alt="placeholder">
+                  </figure>
+                </div>
+                <div class="content">
+                  Here is where I'm typing all kinds of craziness about how awesome my beach house is.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="Media/beach-house-front.jpg" alt="placeholder">
+                  </figure>
+                </div>
+                <div class="content">
+                  Here is where I'm typing all kinds of craziness about how awesome my beach house is.
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </section>
+
+
+      <!-- Image & Content section -->
+      <section class="section">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-5">
+            <div class="tile is-child">
+              <img src="Media/beach-house-front.jpg">
+            </div>
+          </div>
+          <div class="is-parent">
+            <div class="tile is-child">
+              <p class="title">Check it out</p>
+              <p class>I can show pictures and write stuff about them here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Amenities List section -->
+      <section class="section">
+
+        <div class="tile is-ancestor">
+
+          <div class="tile is-parent">
+            <div class="container">
+              <h2 style="text-align: center;">Amenities</h2>
+            </div>
+            <div class="tile is-child">
+              <ul>
+                <li>Private Beach</li>
+                <li>Wrap-around deck</li>
+                <li>Dock</li>
+                <li>Pergola</li>
+              </ul>
+            </div>
+            <div class="tile is-child">
+              <ul>
+                <li>HD TV</li>
+                <li>Surround Sound System</li>
+                <li>High-speed internet</li>
+                <li>Roku w/ streaming services</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

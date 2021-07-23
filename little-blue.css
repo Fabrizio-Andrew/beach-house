@@ -1,0 +1,107 @@
+.va {
+    display: flex;
+    align-items: center;
+  }
+  .hero, 
+  .cta {
+    background: url(/Users/fabrizio/beach-house-site/Media/dock-lights.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .cta {
+    height: 500px;
+    border-top: 10px solid turquoise;
+  }
+  
+  footer {
+    color: white;
+    background: rgb(14, 14, 14) !important;
+  }
+  
+  footer strong {
+    color: turquoise;
+  }
+  
+  footer a {
+    color: turquoise;
+  }
+  
+  .title {
+    color: white;
+    font-weight: 800;
+    font-size: 4rem;
+    font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
+  }
+
+  .title > strong {
+    font-family: cursive;
+    color: navy;
+  }
+  
+  .subtitle {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
+  }
+  
+  hr.content-divider {
+    max-width: 75px;
+    height: 5px;
+  }
+  
+  #parallax-1 {
+    background: url(/Users/fabrizio/beach-house-site/Media/beach-house-front2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid white;
+  }
+  
+  #parallax-1 hr {
+    background: coral;
+  }
+  
+  #parallax-2 {
+    background: url(/Users/fabrizio/beach-house-site/Media/living-room-view.jpeg);
+    background-attachment: fixed;/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid white;
+  }
+  
+  #parallax-2 hr {
+    background: yellow;
+  }
+  
+  #parallax-3 {
+    background: url(https://source.unsplash.com/featured/?city);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid white;
+  }
+  
+  #parallax-3 hr {
+    background: hotpink;
+  }
+  
+  .label {
+    color: white;
+  }
+  
+  input {
+    background: transparent !important;
+    border: 1px solid turquoise !important;
+    color: white !important;
+  }
+  
+  input::placeholder {
+    color: white !important;
+  }

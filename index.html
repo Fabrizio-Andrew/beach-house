@@ -8,6 +8,7 @@
     <title>Little Blue on the Bay -- Deal Island Beach House</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <script src="little-blue.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="little-blue.css">
     <link rel="stylesheet" href="Hero.css">
@@ -66,7 +67,7 @@
             <div class="column is-6 is-offset-6">
               <h1 class="title is-1 ">Relax</h1>
               <hr class="content-divider">
-              <h2 class="subtitle">Enjoy your own private, sandy beach.  No crowds.  Just the water, the air, and the sun.</h2>
+              <h2 class="subtitle">Enjoy your own private, sandy beach.  No crowds.  Just the air, the sun, and a panoramic view of the Chesapeake Bay.</h2>
             </div>
           </div>
         </div>
@@ -86,15 +87,68 @@
         </div>
       </div>
     </section>
-    <section id="parallax-3" class="hero is-large ">
+    <section id="parallax-3" class="hero is-medium">
       <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-6 is-offset-6">
-              <h1 class="title is-1 ">Amet Consectetur</h1>
-              <hr class="content-divider">
-              <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure minus nam necessitatibus neque in perferendis eveniet dolorum assumenda dolores accusamus.</h2>
-              <a href="#" class="button is-white is-inverted">Next&ensp;<i class="fad fa-chevron-right"></i></a>
+        <div class="container has-text-centered" id="amenities">
+          <h1 class="title is-1">Amenities</h1>
+          <div class="tabs is-toggle is-toggle-rounded is-fullwidth">
+            <ul>
+              <li class="is-active" id="tab-1">
+                <a id="link-1">
+                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                  <span>Accomodations and Conveniences</span>
+                </a>
+              </li>
+              <li id="tab-2">
+                <a id="link-2">
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>Entertainment & Outdoor Activities</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <div class=tab-pane id="pane-1" style="display: block;">
+              <div class="columns">
+                <div class="column">
+                  <ul>
+                    <li>Master Bedroom: 1 King Bed</li>
+                    <li>Second Bedroom: Twin-size day bed with second pullout twin bed</li>
+                    <li>Loft: 1 Queen Bed</li>
+                    <li>Linens, pillows, & pillowcases provided for all beds</li>
+                    <li>Iron & ironing board</li>
+                    <li>Lap desk</li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <li>1 full bathroom and 1 half bathroom</li>
+                  <li>Towels, washcloths, and toiletries provided</li>
+                  <li>Full Kitchen w/ pots & pans, plates, etc.</li>
+                  <li>Keurig w/ coffee and tea included</li>
+                  <li>Hair Drier</li>
+                </div>
+              </div>
+            </div>
+            <div class=tab-pane id="pane-2" style="display: none;">
+              <div class="columns">
+                <div class="column">
+                  <ul>
+                    <li>High-Speed Internet Connection</li>
+                    <li>HD TV with Surround Sound</li>
+                    <li>Streaming Services - including Netflix, Disney+, & HBO Max</li>
+                    <li>Outdoor Sound System</li>
+                    <li>Board Games</li>
+
+                  </ul>
+                </div>
+                <div class="column">
+                  <li>2 Crab Pots</li>
+                  <li>Adirondack Chairs</li>
+                  <li>Outdoor Shower</li>
+                  <li>Beach Towels</li>
+                  <li>Charcoal Grill</li>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -145,4 +199,35 @@
     </footer>
   </body>
 
+<!-- Some cards in case I want to work on this concept
+  <div class="columns">
+    <div class="column is-4">
+      <div class="card large">
+        <div class=card-image>
+          <figure class="image is-10by8">
+            <img src="Media/master-bedroom2.jpeg" alt="Master Bedroom">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="column is-4">
+      <div class="card large">
+        <div class=card-image>
+          <figure class="image is-10by8">
+            <img src="Media/guest-bedroom-landscape.jpeg" alt="Second Bedroom">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="column is-4">
+      <div class="card large">
+        <div class=card-image>
+          <figure class="image is-10by8">
+            <img src="Media/loft-bed.jpeg" alt="Loft Bedroom">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
 </html>

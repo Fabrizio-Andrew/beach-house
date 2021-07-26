@@ -80,7 +80,7 @@
   }
   
   #parallax-3 {
-    background: url(https://source.unsplash.com/featured/?city);
+    background: white;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@
   }
   
   #parallax-3 hr {
-    background: hotpink;
+    background: white;
   }
   
   .label {
@@ -104,4 +104,21 @@
   
   input::placeholder {
     color: white !important;
+  }
+
+  #amenities {
+    border-top: navy solid 1px;
+    border-bottom: navy solid 1px;
+    padding: 20px;
+  }
+
+  #amenities > h1 {
+    color: navy;
+    font-weight: 600;
+    text-shadow: 0 0 0;
+  }
+
+  .is-active > a{
+    background-color: navy !important;
+    border-color: navy !important;
   }

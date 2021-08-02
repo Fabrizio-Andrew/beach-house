@@ -4,9 +4,9 @@
   }
   .hero, 
   .cta {
-    background: url(/Users/fabrizio/beach-house-site/Media/dock-lights.jpg);
+    background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
     background-attachment: fixed;
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -54,7 +54,7 @@
   }
   
   #parallax-1 {
-    background: url(/Users/fabrizio/beach-house-site/Media/beach-house-front2.jpeg);
+    background: url(https://beachhouse.blob.core.windows.net/main-images/beach-house-front2.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   }
   
   #parallax-2 {
-    background: url(/Users/fabrizio/beach-house-site/Media/living-room-view.jpeg);
+    background: url(https://beachhouse.blob.core.windows.net/main-images/living-room-view.jpeg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,4 +121,16 @@
   .is-active > a{
     background-color: navy !important;
     border-color: navy !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hero, #parallax-1, #parallax-2, #parallax-3 {
+      background-attachment: scroll !important;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) and (min-width: 769px) {
+    .hero, #parallax-1, #parallax-2, #parallax-3 {
+      background-size: scroll !important;
+    }
   }

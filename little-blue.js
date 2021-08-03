@@ -80,6 +80,12 @@ function renderGallery() {
         });
 
         herobody.append(container);
-        document.querySelector('#gallery').append(herobody);
+
+        var gallerytitle = document.createElement("h1");
+        gallerytitle.innerHTML = "Gallery";
+        gallerytitle.id = "gallery-title";
+        gallerytitle.className = "title is-1";
+
+        document.querySelector('#gallery').append(gallerytitle, herobody);
     });
 }

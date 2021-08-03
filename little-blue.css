@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
   }
-  .hero, 
-  .cta {
+  .hero {
     background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -12,6 +11,7 @@
   }
   
   .cta {
+    background: rgb(0, 0, 75);
     height: 500px;
     border-top: 10px solid turquoise;
   }
@@ -39,7 +39,7 @@
 
   .title > strong {
     font-family: cursive;
-    color: navy;
+    color: rgb(0, 0, 75);
   }
   
   .subtitle {
@@ -96,9 +96,9 @@
     color: white;
   }
   
-  input {
+  input, textarea {
     background: transparent !important;
-    border: 1px solid turquoise !important;
+    border: 2px solid white !important;
     color: white !important;
   }
   
@@ -107,25 +107,34 @@
   }
 
   #amenities {
-    border-top: navy solid 1px;
-    border-bottom: navy solid 1px;
+    border-top: rgb(0, 0, 75) solid 1px;
+    border-bottom: rgb(0, 0, 75) solid 1px;
     padding: 20px;
   }
 
-  #amenities > h1 {
-    color: navy;
+  #amenities > h1, #gallery > h1 {
+    color: rgb(0, 0, 75);
     font-weight: 600;
     text-shadow: 0 0 0;
+    text-align: center;
   }
 
   .is-active > a{
-    background-color: navy !important;
-    border-color: navy !important;
+    background-color: rgb(0, 0, 75) !important;
+    border-color: rgb(0, 0, 75) !important;
   }
 
   @media only screen and (max-width: 768px) {
     .hero, #parallax-1, #parallax-2, #parallax-3 {
       background-attachment: scroll !important;
+    }
+
+    .title {
+      font-size: 2rem !important;
+    }
+
+    .subtitle {
+      font-size: 0.95em !important;
     }
   }
 

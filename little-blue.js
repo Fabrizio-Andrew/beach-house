@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     // Navbar actions
     document.querySelector('#nav-1').addEventListener('click', () => {
         document.querySelector('#amenities-section').scrollIntoView({block: 'start', behavior: 'smooth'});
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#link-1').addEventListener('click', () => showPane1());
     document.querySelector('#link-2').addEventListener('click', () => showPane2());
 
+    // Contact form Email
+    document.querySelector('#submit').addEventListener('click', () => submitContactForm());
+
+    // Render Gallery
     renderGallery();
 });
 
@@ -110,4 +115,38 @@ function renderGallery() {
         herobody.append(gallerytitle, container);
         document.querySelector('#gallery').append(herobody);
     });
+}
+
+function submitContactForm() {
+
+    var formName = document.querySelector('#name-field').value;
+    var formEmail = document.querySelector('#email-field').value;
+    var formMessage = document.querySelector('#message-field').value;
+
+    if (formName.length > 0 && formEmail.length > 0 && formMessage.length > 0) {
+
+        console.log(formName, formEmail, formMessage);
+        fetch('https://prod-90.eastus.logic.azure.com:443/workflows/19628035679f4de4a33c255d146c3325/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hoJmYypJVC_4VS57Kh5EIkQciNsigXo2cdtPUp7IIoc', {
+            method: 'POST',
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify({
+                name: formName,
+                email: formEmail,
+                message: formMessage
+            })
+        })
+        // Print result
+        .then(response => response.json())
+        .then(result => {
+            console.log('sent');
+            console.log(result);
+            
+            return false;
+        });
+ 
+    } else {
+        console.log('Form incomplete.')
+    }
+    return false;
+
 }

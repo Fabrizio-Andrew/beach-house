@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Navbar actions
+    document.querySelector('#nav-1').addEventListener('click', () => {
+        document.querySelector('#parallax-3').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
+        document.querySelector('.navbar-burger').classList.toggle('is-active');
+    })
+    document.querySelector('#nav-2').addEventListener('click', () => {
+        document.querySelector('#parallax-3').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
+        document.querySelector('.navbar-burger').classList.toggle('is-active');
+    })
+    document.querySelector('#nav-3').addEventListener('click', () => {
+        document.querySelector('#gallery').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
+        document.querySelector('.navbar-burger').classList.toggle('is-active');
+    })
+    document.querySelector('#nav-4').addEventListener('click', () => {
+        document.querySelector('.cta').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
+        document.querySelector('.navbar-burger').classList.toggle('is-active');
+    })
+
+    // Amenities tabs
     document.querySelector('#link-1').addEventListener('click', () => showPane1());
     document.querySelector('#link-2').addEventListener('click', () => showPane2());
 

@@ -24,6 +24,10 @@
     border-radius: .375em;
   }
 
+  .navbar-menu {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
   .hero {
     background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
     background-attachment: fixed;

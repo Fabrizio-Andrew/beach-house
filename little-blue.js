@@ -141,12 +141,10 @@ function submitContactForm() {
             console.log('sent');
             console.log(result);
             
-            return false;
         });
  
     } else {
         console.log('Form incomplete.')
     }
-    return false;
 
 }

@@ -1,171 +1,218 @@
 .va {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  padding: 8px 18px 8px 18px;
+  color: rgb(0, 0, 75);
+  font-size: 1.3rem;
+  border: 1px solid transparent;
+  border-radius: .375em;
+  transition-duration: 0.3s;
+}
+
+.navbar-item:hover {
+  background-color: rgb(0, 0, 0, 0) !important;
+  text-shadow: 1px 1px 1px rgb(0, 0, 75), 1px 1px 1px rgb(0, 0, 75);
+  color:rgb(0, 0, 75) !important;
+  transform: translateY(8px);
+}
+
+.navbar-burger {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: .375em;
+}
+
+
+
+.hero {
+  background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  background: rgb(0, 0, 75);
+  height: 558px;
+  border: 10px solid rgb(0, 0, 75);
+  padding: 20px 0 20px 0;
+}
+
+footer {
+  color: white;
+  background: rgb(14, 14, 14) !important;
+}
+
+footer strong {
+  color: turquoise;
+}
+
+footer a {
+  color: turquoise;
+}
+
+.title {
+  color: white;
+  font-weight: 800;
+  font-size: 4rem;
+  font-family: 'Nunito Sans', sans-serif;
+  text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
+}
+
+.title > strong {
+  font-family: cursive;
+  color: rgb(0, 0, 75);
+}
+
+.subtitle {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
+}
+
+hr.content-divider {
+  max-width: 75px;
+  height: 5px;
+}
+
+#parallax-1 {
+  background: url(https://beachhouse.blob.core.windows.net/main-images/beach-house-front2.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 10px solid white;
+}
+
+#parallax-1 hr {
+  background: rgb(0, 0, 75);
+}
+
+#parallax-2 {
+  background: url(https://beachhouse.blob.core.windows.net/main-images/living-room-view.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 10px solid white;
+}
+
+#parallax-2 hr {
+  background: rgb(0, 0, 75);
+}
+
+#parallax-3 {
+  background: url(Media/main-page/Downtown-Salisbury-2.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 10px solid white;
+}
+
+#parallax-3 hr {
+  background: rgb(0, 0, 75);
+}
+
+#amenities-section, #rates-section {
+  background: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 10px solid white;
+}
+
+#amenities-section hr, #rates-section hr {
+  background: white;
+}
+
+.label {
+  color: white;
+}
+
+input, textarea {
+  background: transparent !important;
+  border: 2px solid white !important;
+  color: white !important;
+}
+
+input:hover, textarea:hover {
+  background: white !important;
+  color: rgb(0, 0, 75) !important;
+}
+
+input:focus, textarea:focus {
+  background: white !important;
+  color: rgb(0, 0, 75) !important;
+}
+
+.label {
+  text-align: left !important;
+}
+
+.control {
+  margin: auto !important;
+}
+
+#amenities, #rates {
+  border-top: rgb(0, 0, 75) solid 1px;
+  border-bottom: rgb(0, 0, 75) solid 1px;
+  padding: 20px;
+}
+
+#amenities > h1, #rates > h1, #gallery-title {
+  color: rgb(0, 0, 75);
+  font-weight: 600;
+  text-shadow: 0 0 0;
+  text-align: center;
+}
+
+#rates > h2 {
+  color: rgb(0, 0, 75);
+  font-weight: 400;
+  text-shadow: 0 0 0;
+  text-align: center;
+}
+
+.is-active > a{
+  background-color: rgb(0, 0, 75) !important;
+  border-color: rgb(0, 0, 75) !important;
+}
+
+#contact-text, #contact-form {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 15px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .hero, #parallax-1, #parallax-2, #parallax-3 {
+    background-attachment: scroll !important;
   }
 
-  .navbar-item {
-    padding: 8px 18px 8px 18px;
-    color: rgb(0, 0, 75);
-    font-size: 1.3rem;
-    border: 1px solid transparent;
-    border-radius: .375em;
-    transition-duration: 0.3s;
+  .title {
+    font-size: 2rem !important;
   }
 
-  .navbar-item:hover {
-    background-color: rgb(0, 0, 0, 0) !important;
-    text-shadow: 1px 1px 1px rgb(0, 0, 75), 1px 1px 1px rgb(0, 0, 75);
-    color:rgb(0, 0, 75) !important;
-    transform: translateY(8px);
+  .subtitle {
+    font-size: 0.95em !important;
   }
+}
 
-  .navbar-burger {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: .375em;
+@media only screen and (max-width: 1023px) and (min-width: 769px) {
+  .hero, #parallax-1, #parallax-2, #parallax-3 {
+    background-size: scroll !important;
   }
 
   .navbar-menu {
     background-color: rgba(255, 255, 255, 0.7);
   }
-
-  .hero {
-    background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .cta {
-    background: rgb(0, 0, 75);
-    height: 500px;
-    border-top: 10px solid turquoise;
-  }
-  
-  footer {
-    color: white;
-    background: rgb(14, 14, 14) !important;
-  }
-  
-  footer strong {
-    color: turquoise;
-  }
-  
-  footer a {
-    color: turquoise;
-  }
-  
-  .title {
-    color: white;
-    font-weight: 800;
-    font-size: 4rem;
-    font-family: 'Nunito Sans', sans-serif;
-    text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
-  }
-
-  .title > strong {
-    font-family: cursive;
-    color: rgb(0, 0, 75);
-  }
-  
-  .subtitle {
-    color: white;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
-  }
-  
-  hr.content-divider {
-    max-width: 75px;
-    height: 5px;
-  }
-  
-  #parallax-1 {
-    background: url(https://beachhouse.blob.core.windows.net/main-images/beach-house-front2.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 10px solid white;
-  }
-  
-  #parallax-1 hr {
-    background: coral;
-  }
-  
-  #parallax-2 {
-    background: url(https://beachhouse.blob.core.windows.net/main-images/living-room-view.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 10px solid white;
-  }
-  
-  #parallax-2 hr {
-    background: yellow;
-  }
-  
-  #parallax-3 {
-    background: white;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 10px solid white;
-  }
-  
-  #parallax-3 hr {
-    background: white;
-  }
-  
-  .label {
-    color: white;
-  }
-  
-  input, textarea {
-    background: transparent !important;
-    border: 2px solid white !important;
-    color: white !important;
-  }
-  
-  input::placeholder {
-    color: white !important;
-  }
-
-  #amenities {
-    border-top: rgb(0, 0, 75) solid 1px;
-    border-bottom: rgb(0, 0, 75) solid 1px;
-    padding: 20px;
-  }
-
-  #amenities > h1, #gallery > h1 {
-    color: rgb(0, 0, 75);
-    font-weight: 600;
-    text-shadow: 0 0 0;
-    text-align: center;
-  }
-
-  .is-active > a{
-    background-color: rgb(0, 0, 75) !important;
-    border-color: rgb(0, 0, 75) !important;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .hero, #parallax-1, #parallax-2, #parallax-3 {
-      background-attachment: scroll !important;
-    }
-
-    .title {
-      font-size: 2rem !important;
-    }
-
-    .subtitle {
-      font-size: 0.95em !important;
-    }
-  }
-
-  @media only screen and (max-width: 1023px) and (min-width: 769px) {
-    .hero, #parallax-1, #parallax-2, #parallax-3 {
-      background-size: scroll !important;
-    }
-  }
+}

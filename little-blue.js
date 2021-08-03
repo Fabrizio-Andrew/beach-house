@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Navbar actions
     document.querySelector('#nav-1').addEventListener('click', () => {
-        document.querySelector('#parallax-3').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#amenities-section').scrollIntoView({block: 'start', behavior: 'smooth'});
         document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
         document.querySelector('.navbar-burger').classList.toggle('is-active');
     })
     document.querySelector('#nav-2').addEventListener('click', () => {
-        document.querySelector('#parallax-3').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#rates-section').scrollIntoView({block: 'start', behavior: 'smooth'});
         document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
         document.querySelector('.navbar-burger').classList.toggle('is-active');
     })
@@ -72,7 +72,7 @@ function renderGallery() {
         
         rows.forEach(async rowarray => {
             let row = document.createElement('div');
-            row.className = "row columns is-multiline";
+            row.className = "row columns is-multiline is-mobile";
 
             rowarray.forEach(async bloburl => {
                 var col = document.createElement('div');
@@ -102,13 +102,12 @@ function renderGallery() {
             container.append(row);
         });
 
-        herobody.append(container);
-
         var gallerytitle = document.createElement("h1");
         gallerytitle.innerHTML = "Gallery";
         gallerytitle.id = "gallery-title";
         gallerytitle.className = "title is-1";
 
-        document.querySelector('#gallery').append(gallerytitle, herobody);
+        herobody.append(gallerytitle, container);
+        document.querySelector('#gallery').append(herobody);
     });
 }

@@ -70,7 +70,7 @@ footer a {
 .subtitle {
   color: white;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
+  text-shadow: 1px 1px 2px #000, 2px 2px 4px rgb(0, 0, 3);
 }
 
 hr.content-divider {
@@ -183,7 +183,7 @@ input:focus, textarea:focus {
   border-color: rgb(0, 0, 75) !important;
 }
 
-#contact-text, #contact-form {
+#contact-text, #contact-form, #confirmation {
   position: relative;
   top: 45%;
   transform: translateY(-50%);
@@ -191,7 +191,9 @@ input:focus, textarea:focus {
   margin: 15px;
 }
 
-
+#confirmation {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .hero, #parallax-1, #parallax-2, #parallax-3 {

@@ -27,7 +27,7 @@
 
 
 .hero {
-  background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
+  background-image: url(Media/main-page/dock-lights.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@ hr.content-divider {
 }
 
 #parallax-1 {
-  background: url(https://beachhouse.blob.core.windows.net/main-images/beach-house-front2.jpeg);
+  background: url(Media/main-page/beach-house-front2.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@ hr.content-divider {
 }
 
 #parallax-2 {
-  background: url(https://beachhouse.blob.core.windows.net/main-images/living-room-view.jpeg);
+  background: url(Media/main-page/living-room-view.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -106,7 +106,7 @@ hr.content-divider {
 }
 
 #parallax-3 {
-  background: url(https://beachhouse.blob.core.windows.net/main-images/Downtown-Salisbury-2.jpeg);
+  background: url(Media/main-page/Downtown-Salisbury-2.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

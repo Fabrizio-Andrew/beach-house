@@ -90,7 +90,7 @@ function renderGallery() {
                 cardimage.className = 'card-image';
 
                 var figure = document.createElement('figure');
-                figure.className = 'image is-5by4';
+                figure.className = 'image is-square';
 
                 var img = document.createElement('img');
                 img.src = bloburl.textContent;

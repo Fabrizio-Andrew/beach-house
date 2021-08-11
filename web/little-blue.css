@@ -82,7 +82,7 @@ hr.content-divider {
 #parallax-1 {
   background: url(Media/main-page/beach-house-front2.jpeg);
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 10px solid white;
@@ -201,12 +201,24 @@ input:focus, textarea:focus {
     background-attachment: scroll !important;
   }
 
+  #parallax-1 {
+    background-image: url(Media/main-page/Beach-House-Front.jpeg)
+  }
+
+  #parallax-2 {
+    background-image: url(Media/main-page/adirondack-chairs.jpeg)
+  }
+
   .title {
     font-size: 2rem !important;
   }
 
   .subtitle {
     font-size: 0.95em !important;
+  }
+
+  .cta {
+    height: 1000px;
   }
 }
 

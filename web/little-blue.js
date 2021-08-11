@@ -52,7 +52,7 @@ function renderGallery() {
     // Function settings
     var galleryurl = 'https://beachhouse.blob.core.windows.net/gallery?restype=container&comp=list'
     var rowlength = 4
-    var columnname = 'column is-3'
+    var columnname = 'column is-one-quarter-desktop is-half-mobile'
 
     // Fetch all files in blob
     fetch(galleryurl)

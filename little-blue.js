@@ -119,12 +119,14 @@ function renderGallery() {
 
 function submitContactForm() {
 
+    // Get field data
     var formName = document.querySelector('#name-field').value;
     var formEmail = document.querySelector('#email-field').value;
     var formMessage = document.querySelector('#message-field').value;
 
+    // Check for required fields
     if (formName.length > 0 && formEmail.length > 0 && formMessage.length > 0) {
-
+        // Post data to Logic App
         console.log(formName, formEmail, formMessage);
         fetch('https://prod-90.eastus.logic.azure.com:443/workflows/19628035679f4de4a33c255d146c3325/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hoJmYypJVC_4VS57Kh5EIkQciNsigXo2cdtPUp7IIoc', {
             method: 'POST',
@@ -136,11 +138,13 @@ function submitContactForm() {
             })
         })
         // Print result
-        .then(response => response.json())
+        //.then(response => response.json())
         .then(result => {
-            console.log('sent');
             console.log(result);
             
+            // Hide contact form and show confirmation message
+            document.querySelector('#contact').style.display = 'none';
+            document.querySelector('#confirmation').style.display = 'block';
         });
  
     } else {

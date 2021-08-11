@@ -27,7 +27,7 @@
 
 
 .hero {
-  background-image: url(https://beachhouse.blob.core.windows.net/main-images/dock-lights.jpg);
+  background-image: url(Media/main-page/dock-lights.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,8 +42,9 @@
 }
 
 footer {
-  color: white;
-  background: rgb(14, 14, 14) !important;
+  color: rgb(0, 0, 75);
+  background: white !important;
+  padding: 24px !important;
 }
 
 footer strong {
@@ -70,7 +71,7 @@ footer a {
 .subtitle {
   color: white;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 1px #000, 2px 2px 3px rgb(0, 0, 3);
+  text-shadow: 1px 1px 2px #000, 2px 2px 4px rgb(0, 0, 3);
 }
 
 hr.content-divider {
@@ -79,7 +80,7 @@ hr.content-divider {
 }
 
 #parallax-1 {
-  background: url(https://beachhouse.blob.core.windows.net/main-images/beach-house-front2.jpeg);
+  background: url(Media/main-page/beach-house-front2.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,7 +93,7 @@ hr.content-divider {
 }
 
 #parallax-2 {
-  background: url(https://beachhouse.blob.core.windows.net/main-images/living-room-view.jpeg);
+  background: url(Media/main-page/living-room-view.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +159,7 @@ input:focus, textarea:focus {
   margin: auto !important;
 }
 
-#amenities, #rates {
+#amenities, #rates, #footer-content {
   border-top: rgb(0, 0, 75) solid 1px;
   border-bottom: rgb(0, 0, 75) solid 1px;
   padding: 20px;
@@ -183,15 +184,17 @@ input:focus, textarea:focus {
   border-color: rgb(0, 0, 75) !important;
 }
 
-#contact-text, #contact-form {
+#contact-text, #contact-form, #confirmation {
   position: relative;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   text-align: center;
   margin: 15px;
 }
 
-
+#confirmation {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .hero, #parallax-1, #parallax-2, #parallax-3 {

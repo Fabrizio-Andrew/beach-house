@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     renderGallery();
 });
 
+// Amenities Section
 function showPane1() {
     document.querySelector('#tab-2').className = '';
     document.querySelector('#tab-1').className = 'is-active';
@@ -78,10 +79,24 @@ function renderGallery() {
         rows.forEach(async rowarray => {
             let row = document.createElement('div');
             row.className = "row columns is-multiline is-mobile";
+            var i = 0;
 
             rowarray.forEach(async bloburl => {
                 var col = document.createElement('div');
                 col.className = columnname;
+
+                // Link to enlarge image
+                var link = document.createElement('a');
+                link.addEventListener('click', () => {
+                    document.querySelector('#enlarged-image').src = bloburl.textContent;
+                    document.querySelector('#gallery-modal').className = 'modal is-active';
+                    document.querySelector('#exit-modal').addEventListener('click', () => {
+                        document.querySelector('#gallery-modal').className = 'modal';
+                    })
+                    document.querySelector('#modal-background').addEventListener('click', () => {
+                        document.querySelector('#gallery-modal').className = 'modal';
+                    })
+                })
 
                 var card = document.createElement('div');
                 card.className = 'card large';
@@ -96,12 +111,16 @@ function renderGallery() {
                 img.src = bloburl.textContent;
                 //TO-DO: alt text
 
+
                 // Assemble the card
                 figure.append(img);
                 cardimage.append(figure);
                 card.append(cardimage);
-                col.append(card);
+                link.append(card);
+                col.append(link);
                 row.append(col);
+
+                i++;
             });
 
             container.append(row);

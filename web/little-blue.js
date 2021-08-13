@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.navbar-burger').classList.toggle('is-active');
     })
     document.querySelector('#nav-4').addEventListener('click', () => {
-        document.querySelector('.cta').scrollIntoView({block: 'start', behavior: 'smooth'});
+        document.querySelector('#cta').scrollIntoView({block: 'start', behavior: 'smooth'});
         document.querySelector('#navbarMenuHeroB').classList.toggle('is-active');
         document.querySelector('.navbar-burger').classList.toggle('is-active');
     })
